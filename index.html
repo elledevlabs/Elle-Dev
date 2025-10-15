@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elle Dev - Elegant Development Solutions</title>
+    <meta name="description" content="Creating beautiful, functional, and innovative digital experiences with cutting-edge technology and elegant design solutions." />
+    <meta name="author" content="Elle Dev" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta property="og:title" content="Elle Dev - Elegant Development Solutions" />
+    <meta property="og:description" content="Creating beautiful, functional, and innovative digital experiences with cutting-edge technology and elegant design solutions." />
+    <meta property="og:type" content="website" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="logo-placeholder"></div>
+                <span class="brand-text">Elle Dev</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-en="Home" data-fr="Accueil">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-en="About" data-fr="À Propos">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-en="Services" data-fr="Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="language-switcher">
+                            <button class="btn btn-sm btn-outline-primary" id="langBtn" onclick="toggleLanguage()">
+                                <i class="fas fa-globe"></i> <span id="langText">FR</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="highlight">Elle Dev</span>
+                            <br><span data-en="Elegant Development Solutions" data-fr="Solutions de Développement Élégantes">Elegant Development Solutions</span>
+                        </h1>
+                        <p class="hero-subtitle" data-en="Creating beautiful, functional, and innovative digital experiences with cutting-edge technology and elegant design solutions." data-fr="Créer des expériences numériques belles, fonctionnelles et innovantes avec une technologie de pointe et des solutions de design élégantes.">Creating beautiful, functional, and innovative digital experiences with cutting-edge technology and elegant design solutions.</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary me-3" data-en="Our Services" data-fr="Nos Services">Our Services</a>
+                            <a href="#contact" class="btn btn-outline-primary" data-en="Get In Touch" data-fr="Nous Contacter">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <!-- Updated hero image to use first blob URL -->
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Elle Dev - Professional Developer" />
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-palette"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="fas fa-database"></i>
+                            <span>Database Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-header text-center">
+                        <h2 class="section-title" data-en="About Elle Dev" data-fr="À Propos d'Elle Dev">About Elle Dev</h2>
+                        <p class="section-subtitle" data-en="Passionate about creating digital solutions that combine elegance with functionality" data-fr="Passionnés par la création de solutions numériques qui allient élégance et fonctionnalité">Passionate about creating digital solutions that combine elegance with functionality</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="about-content text-center">
+                        <h3 data-en="Who We Are" data-fr="Qui Nous Sommes">Who We Are</h3>
+                        <p data-en="Elle Dev is a forward-thinking development team that specializes in creating beautiful, functional digital solutions. We believe in combining technical excellence with aesthetic appeal, bringing a unique perspective to the tech industry." data-fr="Elle Dev est une équipe de développement avant-gardiste spécialisée dans la création de solutions numériques belles et fonctionnelles. Nous croyons en la combinaison de l'excellence technique avec l'attrait esthétique, apportant une perspective unique à l'industrie technologique.">Elle Dev is a forward-thinking development team that specializes in creating beautiful, functional digital solutions. We believe in combining technical excellence with aesthetic appeal, bringing a unique perspective to the tech industry.</p>
+                        
+                        <h3 data-en="Our Mission" data-fr="Notre Mission">Our Mission</h3>
+                        <p data-en="To bridge the gap between technical functionality and elegant design, creating digital experiences that are not only powerful but also beautiful and user-friendly." data-fr="Combler le fossé entre la fonctionnalité technique et le design élégant, créant des expériences numériques qui sont non seulement puissantes mais aussi belles et conviviales.">To bridge the gap between technical functionality and elegant design, creating digital experiences that are not only powerful but also beautiful and user-friendly.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label" data-en="Client Satisfaction" data-fr="Satisfaction Client">Client Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label" data-en="Support Available" data-fr="Support Disponible">Support Available</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-header text-center">
+                        <h2 class="section-title" data-en="Our Services" data-fr="Nos Services">Our Services</h2>
+                        <p class="section-subtitle" data-en="Comprehensive development solutions tailored to your needs" data-fr="Solutions de développement complètes adaptées à vos besoins">Comprehensive development solutions tailored to your needs</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Core Services -->
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 data-en="Web Applications" data-fr="Applications Web">Web Applications</h3>
+                        <p data-en="Custom, scalable, and secure platforms built with modern technologies, responsive design, and optimal performance for your business needs." data-fr="Plateformes personnalisées, évolutives et sécurisées construites avec des technologies modernes, un design responsive et des performances optimales pour vos besoins commerciaux.">Custom, scalable, and secure platforms built with modern technologies, responsive design, and optimal performance for your business needs.</p>
+                        <ul class="service-features">
+                            <li>Responsive Design</li>
+                            <li>Modern Frameworks</li>
+                            <li>Performance Optimization</li>
+                            <li>SEO Friendly</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 data-en="Desktop Applications" data-fr="Applications Bureau">Desktop Applications</h3>
+                        <p data-en="Cross-platform solutions for Windows and Linux operating systems that provide seamless user experiences with native performance." data-fr="Solutions multiplateformes pour les systèmes d'exploitation Windows et Linux qui offrent des expériences utilisateur fluides avec des performances natives.">Cross-platform solutions for Windows and Linux operating systems that provide seamless user experiences with native performance.</p>
+                        <ul class="service-features">
+                            <li>Cross-Platform Compatibility</li>
+                            <li>Native Performance</li>
+                            <li>Intuitive Interfaces</li>
+                            <li>Secure Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 data-en="UI/UX Design" data-fr="Design UI/UX">UI/UX Design</h3>
+                        <p data-en="Modern, user-friendly, and responsive experiences that combine aesthetic appeal with functional usability, creating interfaces that users love." data-fr="Expériences modernes, conviviales et responsives qui combinent l'attrait esthétique avec l'utilisabilité fonctionnelle, créant des interfaces que les utilisateurs adorent.">Modern, user-friendly, and responsive experiences that combine aesthetic appeal with functional usability, creating interfaces that users love.</p>
+                        <ul class="service-features">
+                            <li>User Research</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Visual Design</li>
+                            <li>Usability Testing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 data-en="Database Management" data-fr="Gestion de Base de Données">Database Management</h3>
+                        <p data-en="Robust and efficient database solutions ensuring data security, optimal performance, and seamless integration with your applications." data-fr="Solutions de base de données robustes et efficaces garantissant la sécurité des données, des performances optimales et une intégration transparente avec vos applications.">Robust and efficient database solutions ensuring data security, optimal performance, and seamless integration with your applications.</p>
+                        <ul class="service-features">
+                            <li>Database Design</li>
+                            <li>Performance Optimization</li>
+                            <li>Security Implementation</li>
+                            <li>Backup & Recovery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Solutions -->
+            <div class="advanced-solutions">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-title" data-en="Advanced Solutions" data-fr="Solutions Avancées">Advanced Solutions</h2>
+                        <p class="section-subtitle" data-en="Cutting-edge technologies for complex business requirements" data-fr="Technologies de pointe pour les exigences commerciales complexes">Cutting-edge technologies for complex business requirements</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-4">
+                        <div class="advanced-solution-card">
+                            <!-- Updated web development image to use second blob URL -->
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web Development Solutions">
+                            <div class="advanced-solution-content">
+                                <h4 data-en="Custom Web Development" data-fr="Développement Web Personnalisé">Custom Web Development</h4>
+                                <p data-en="Tailored web solutions using the latest frameworks and technologies" data-fr="Solutions web sur mesure utilisant les derniers frameworks et technologies">Tailored web solutions using the latest frameworks and technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="advanced-solution-card">
+                            <!-- Updated UI/UX design image to use third blob URL -->
+                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="UI/UX Design Services">
+                            <div class="advanced-solution-content">
+                                <h4 data-en="Enterprise UI/UX" data-fr="UI/UX Entreprise">Enterprise UI/UX</h4>
+                                <p data-en="Professional design systems and user experience optimization" data-fr="Systèmes de conception professionnels et optimisation de l'expérience utilisateur">Professional design systems and user experience optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="advanced-solution-card">
+                            <!-- Updated e-commerce image to use fourth blob URL -->
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="E-commerce Solutions">
+                            <div class="advanced-solution-content">
+                                <h4 data-en="E-commerce Platforms" data-fr="Plateformes E-commerce">E-commerce Platforms</h4>
+                                <p data-en="Complete online store solutions with payment integration and analytics" data-fr="Solutions complètes de boutique en ligne avec intégration de paiement et analyses">Complete online store solutions with payment integration and analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-header text-center">
+                        <h2 class="section-title" data-en="Get In Touch" data-fr="Contactez-Nous">Get In Touch</h2>
+                        <p class="section-subtitle" data-en="Ready to start your next project? Let's discuss your requirements" data-fr="Prêt à commencer votre prochain projet ? Discutons de vos besoins">Ready to start your next project? Let's discuss your requirements</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label" data-en="Your Name" data-fr="Votre Nom">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label" data-en="Email Address" data-fr="Adresse Email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label" data-en="Subject" data-fr="Sujet">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label" data-en="Message" data-fr="Message">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <h5 data-en="Email" data-fr="Email">Email</h5>
+                                    <p>elledevlabs@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h5 data-en="Location" data-fr="Localisation">Location</h5>
+                                    <p data-en="Global Remote" data-fr="Télétravail Global">Global Remote</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/elledevlabs" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/elledevlabs/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581233100029" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@elledevlabs" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <div class="logo-placeholder"></div>
+                        <span>Elle Dev</span>
+                    </div>
+                    <p class="footer-text" data-en="Creating elegant digital solutions with passion and precision." data-fr="Créer des solutions numériques élégantes avec passion et précision.">Creating elegant digital solutions with passion and precision.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/elledevlabs" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/elledevlabs/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61582431028582" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@elledevlabs" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elle Dev. <span data-en="All rights reserved." data-fr="Tous droits réservés.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
