@@ -68,3 +68,4 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 document.addEventListener("DOMContentLoaded", () => {
   updateLanguage()
 })
+
